@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container-reg">
+    
+        <form action="../../controlador/Uregistrar.php" method="POST">
+            <h2>Registro</h2>
+            <input type="int" name="id_aprendiz" placeholder="identificacion " class="input-field">
+            <input type="text" name="nombre" placeholder="Nombre" required class="input-field">
+            <input type="text" name="apellido" placeholder="Apellidos" required class="input-field">
+            <input type="number" name="edad" placeholder="Edad" required class="input-field">
+            <select name="centro" class="input-field">
+                <option value="" disabled selected>Centro de formación</option>
+                <option value="1">Diseño y metrologia</option>
+                <option value="2">Hoteleria</option>
+                <option value="3">Cenigraf</option>
+                <option value="4">gestion industrial</option>
+            </select>
+            <input type="text" name="ficha" placeholder="Ficha" required class="input-field">
+            <input type="email" name="correo" placeholder="Correo" required class="input-field">
+            <input type="password" name="clave" placeholder="Contraseña" required class="input-field">
+            <button type="submit" class="submit-btn">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
